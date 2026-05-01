@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Clean Ficbook",
+  "version": "1.0",
+  "description": "Скрывает баннеры промо и премиума на ficbook.net",
+  "content_scripts": [
+    {
+      "matches": ["*://ficbook.net/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
