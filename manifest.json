@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Clean Ficbook",
-  "version": "1.1",
-  "description": "Скрывает баннеры промо и премиума на ficbook.net",
+  "version": "1.2",
+  "description": "Скрывает рекламу, промо и push-уведомления на ficbook.net",
   "content_scripts": [
     {
       "matches": ["*://ficbook.net/*"],

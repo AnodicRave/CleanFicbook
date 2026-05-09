@@ -13,6 +13,8 @@ const LIST = [
     '.btn-on-book-background--premium',
     '.premium-button',
     '.webview-paid-content',
+    '.premium-descriptions',
+    '.primary-box-with-button.flex-column.align-items-start',
 
     // Реклама приложения
     'app-install-ads',
