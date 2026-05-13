@@ -3,9 +3,10 @@ const LIST = [
     '.global-banner-2',
     '.global-banner',
 
-    // Промо-карусели
+    // Промо
     '.fanfic-promo-carousel',
     '.home-promo',
+    '.fanfic-text-promo',
 
     // Скидки и премиум
     '.discount-sticky-container',
@@ -23,11 +24,17 @@ const LIST = [
     '.install-link',
     '.android-smart-banner',
     '.open-in-reader',
+    'fanfic-open-reader',
 
-    'wheel-of-fortune-modal'
+    'wheel-of-fortune-modal',
 ];
 
-document.querySelectorAll(LIST.join(',')).forEach(el => el.remove());
+function cleanUp() {
+    document.querySelectorAll(LIST.join(',')).forEach(el => el.remove());
+}
+
+cleanUp();
+new MutationObserver(cleanUp).observe(document.body, { childList: true, subtree: true });
 
 setTimeout(() => {
     document.querySelector('#notificationsSubscribeModal')?.remove();
